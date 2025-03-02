@@ -94,7 +94,7 @@ const HeroSection = () => {
       <div className="absolute bottom-12 right-12 z-20 flex space-x-4">
         <button
           onClick={togglePlay}
-          className="w-12 h-12 rounded-full border border-white/25 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white transition-all hover:bg-black/30"
+          className="w-8 h-8 rounded-full border border-white/25 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white transition-all hover:bg-black/30"
           aria-label={isPlaying ? "Pause" : "Play"}
         >
           {isPlaying ? (
@@ -130,7 +130,7 @@ const HeroSection = () => {
         </button>
         <button
           onClick={toggleMute}
-          className="w-12 h-12 rounded-full border border-white/25 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white transition-all hover:bg-black/30"
+          className="w-8 h-8 rounded-full border border-white/25 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white transition-all hover:bg-black/30"
           aria-label={isMuted ? "Unmute" : "Mute"}
         >
           {isMuted ? (

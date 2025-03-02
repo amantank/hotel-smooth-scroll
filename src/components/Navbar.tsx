@@ -75,7 +75,7 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <nav
           className={cn(
-            "hidden lg:flex items-center space-x-8",
+            "hidden lg:flex items-center space-x-6 ",
             isScrolled ? "text-black" : " text-white"
           )}
         >
@@ -84,6 +84,9 @@ const Navbar = () => {
           </a>
           <a href="#dining" className="nav-link">
             Dining
+          </a>
+          <a href="#events" className="nav-link">
+            Events
           </a>
           <a href="#about" className="nav-link">
             About
@@ -108,8 +111,8 @@ const Navbar = () => {
         <nav className="flex flex-col items-center space-y-5">
           {[
             { label: "Rooms", href: "#rooms" },
-            { label: "Experiences", href: "#experiences" },
             { label: "Dining", href: "#dining" },
+            { label: "Events", href: "#events" },
             { label: "About", href: "#about" },
           ].map(({ label, href }) => (
             <a

@@ -38,7 +38,9 @@ const Index = () => {
 
       <main className="flex-grow">
         <HeroSection />
-        <FeaturedRooms />
+        <div className="setion container-custom bg-white">
+          <FeaturedRooms />
+        </div>
         {/* Dining Section */}
         <section id="dining" className="section bg-white overflow-hidden">
           <div className="container-custom">
@@ -110,10 +112,119 @@ const Index = () => {
 
                 <div className="appear fade-in reveal-delay-500 mt-8">
                   <a
-                    href="#"
+                    href="https://wa.me/+919982616160?text=Hello!%20I'm%20interested%20in%20reserving%20a%20table%20at%20your%20restaurant.%20Could%20you%20please%20provide%20more%20details%20on%20availability%20and%20menu%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
                   >
                     Reserve a Table
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Events Section */}
+        <section id="events" className="section bg-white overflow-hidden">
+          <div className="container-custom">
+            <div className="text-center mb-16">
+              <span className="appear fade-in inline-block text-ultima-500 uppercase text-sm tracking-widest mb-3">
+                Memorable Gatherings
+              </span>
+              <h2 className="appear fade-in reveal-delay-100 text-4xl md:text-5xl mb-6">
+                Weddings & Conferences
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 items-center mt-24">
+              <div className="appear zoom-in">
+                <div className="relative">
+                  <div className="aspect-w-4 aspect-h-3 overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=1600&auto=format&fit=crop"
+                      alt="Wedding at Hotel Riddhi Inn"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg">
+                    <span className="text-ultima-800 font-playfair text-xl">
+                      Weddings
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="appear fade-in reveal-delay-100 text-3xl md:text-4xl font-playfair mb-6">
+                  A Dream Wedding Destination
+                </h3>
+                <p className="appear fade-in reveal-delay-200 text-ultima-600 mb-6">
+                  Udaipur is one of the best wedding destinations in India. Away
+                  from the city's hustle, Hotel Riddhi Inn blends heritage
+                  architecture with modern amenities, offering a perfect venue
+                  for your dream wedding.
+                </p>
+                <p className="appear fade-in reveal-delay-300 text-ultima-600 mb-8">
+                  We provide elegant gardens, banquet halls, and luxurious
+                  rooms. Our dedicated team ensures seamless event planning,
+                  from venue setup to catering, music, and decor, creating
+                  unforgettable celebrations.
+                </p>
+                <div className="appear fade-in reveal-delay-500 mt-8">
+                  <a
+                    href="https://wa.me/919982616160?text=Hello!%20I'm%20interested%20in%20planning%20a%20wedding%20at%20your%20venue.%20Could%20you%20please%20provide%20more%20details%20on%20availability,%20pricing,%20and%20services%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
+                  >
+                    Plan Your Wedding
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 items-center mt-24">
+              <div className="appear zoom-in">
+                <div className="relative">
+                  <div className="aspect-w-4 aspect-h-3 overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?q=80&w=1600&auto=format&fit=crop"
+                      alt="Conference at Hotel Riddhi Inn"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg">
+                    <span className="text-ultima-800 font-playfair text-xl">
+                      Conferences
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="appear fade-in reveal-delay-100 text-3xl md:text-4xl font-playfair mb-6">
+                  Professional Conference Facilities
+                </h3>
+                <p className="appear fade-in reveal-delay-200 text-ultima-600 mb-6">
+                  Host business meetings, academic conferences, or trade events
+                  in our well-equipped conference halls. Our venue blends
+                  elegance with modern technology, ensuring a seamless
+                  experience.
+                </p>
+                <p className="appear fade-in reveal-delay-300 text-ultima-600 mb-8">
+                  Featuring projectors, advanced sound systems, and elegant
+                  interiors, our conference rooms offer the perfect setting for
+                  productive discussions and networking opportunities.
+                </p>
+                <div className="appear fade-in reveal-delay-500 mt-8">
+                  <a
+                    href="https://wa.me/919982616160?text=Hello!%20I'm%20interested%20in%20booking%20a%20conference%20room%20at%20your%20venue.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
+                  >
+                    Book a Conference Room
                   </a>
                 </div>
               </div>
