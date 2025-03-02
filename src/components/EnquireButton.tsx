@@ -1,19 +1,22 @@
-
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 interface EnquireButtonProps {
   className?: string;
-  variant?: 'default' | 'white';
+  variant?: "default" | "white";
+  isScrolled?: boolean;
 }
 
-const EnquireButton = ({ className, variant = 'default' }: EnquireButtonProps) => {
+const EnquireButton = ({
+  className,
+  variant = "default",
+  isScrolled = true,
+}: EnquireButtonProps) => {
   return (
-    <a 
-      href="#enquire" 
+    <a
+      href="#enquire"
       className={cn(
         "btn btn-ghost uppercase text-sm tracking-wider transition-all duration-300",
-        variant === 'white' && "text-white hover:text-white/80",
-        className
+        isScrolled ? "text-black" : "text-white hover:bg-ultima-800 hover:text-white  transition-2s"
       )}
     >
       Enquire

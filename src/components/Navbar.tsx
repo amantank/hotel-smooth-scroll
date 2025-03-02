@@ -1,7 +1,6 @@
-
-import { useState, useEffect } from 'react';
-import { cn } from '@/lib/utils';
-import EnquireButton from './EnquireButton';
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import EnquireButton from "./EnquireButton";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,107 +11,116 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header 
+    <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out",
-        isScrolled 
-          ? "bg-white/90 backdrop-blur-md py-4 shadow-sm" 
-          : "bg-transparent py-6"
+        isScrolled
+          ? "bg-white/90 backdrop-blur-md py-3 shadow-sm"
+          : "bg-transparent py-5"
       )}
     >
-      <div className="container-custom flex items-center justify-between">
+      <div className="container-custom flex items-center justify-between px-4 md:px-6 lg:px-8">
         {/* Menu Button (Mobile) */}
-        <button 
+        <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden text-foreground"
+          className="lg:hidden text-foreground mt-2 focus:outline-none"
           aria-label="Toggle menu"
         >
-          <div className="flex flex-col space-y-1.5 w-6">
-            <span className={cn(
-              "block h-px w-full bg-current transition-all duration-300 ease-in-out",
-              isMobileMenuOpen && "translate-y-2.5 rotate-45"
-            )}></span>
-            <span className={cn(
-              "block h-px w-full bg-current transition-all duration-300 ease-in-out",
-              isMobileMenuOpen && "opacity-0"
-            )}></span>
-            <span className={cn(
-              "block h-px w-full bg-current transition-all duration-300 ease-in-out",
-              isMobileMenuOpen && "-translate-y-2.5 -rotate-45"
-            )}></span>
+          <div className="flex flex-col space-y-1 w-5">
+            <span
+              className={cn(
+                "block h-[2px] w-full bg-current transition-all duration-300 ease-in-out",
+                isMobileMenuOpen && "translate-y-2 rotate-45"
+              )}
+            ></span>
+            <span
+              className={cn(
+                "block h-[2px] w-full bg-current transition-all duration-300 ease-in-out",
+                isMobileMenuOpen && "opacity-0"
+              )}
+            ></span>
+            <span
+              className={cn(
+                "block h-[2px] w-full bg-current transition-all duration-300 ease-in-out",
+                isMobileMenuOpen && "-translate-y-2 -rotate-45"
+              )}
+            ></span>
           </div>
-          <span className="sr-only">Menu</span>
         </button>
 
         {/* Logo */}
-        <div className={cn(
-          "absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-in-out",
-          isScrolled ? "scale-90" : "scale-100"
-        )}>
+        <div
+          className={cn(
+            "absolute left-1/2 transform -translate-x-1/2 mt-2 transition-all duration-500 ease-in-out",
+            isScrolled ? "scale-90 text-black" : "scale-100 text-white"
+          )}
+        >
           <a href="#" className="text-center">
             <div className="flex flex-col items-center">
-              <h1 className="text-2xl font-playfair tracking-wider">ULTIMA</h1>
-              <div className="text-[10px] tracking-[0.3em] uppercase">Collection</div>
+              <h1 className="text-xl md:text-2xl font-playfair tracking-wider">
+                Riddhi Inn
+              </h1>
+              <div className="text-[10px] tracking-[0.3em] uppercase">
+                Udaipur
+              </div>
             </div>
           </a>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center space-x-10">
-          <a href="#rooms" className="nav-link">Rooms</a>
-          <a href="#experiences" className="nav-link">Experiences</a>
-          <a href="#dining" className="nav-link">Dining</a>
-          <a href="#about" className="nav-link">About</a>
+        <nav
+          className={cn(
+            "hidden lg:flex items-center space-x-8",
+            isScrolled ? "text-black" : " text-white"
+          )}
+        >
+          <a href="#rooms" className="nav-link">
+            Rooms
+          </a>
+          <a href="#dining" className="nav-link">
+            Dining
+          </a>
+          <a href="#about" className="nav-link">
+            About
+          </a>
         </nav>
 
         {/* Enquire Button */}
-        <div className={cn(
-          "transition-all duration-500 ease-in-out",
-          isScrolled ? "opacity-100" : "opacity-100"
-        )}>
-          <EnquireButton />
-        </div>
+        <div className="hidden  lg:block">
+          <EnquireButton isScrolled={isScrolled} />
+        </div> 
       </div>
 
       {/* Mobile Menu */}
-      <div className={cn(
-        "absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md transition-all duration-500 ease-in-out overflow-hidden lg:hidden",
-        isMobileMenuOpen ? "max-h-[400px] border-b border-ultima-100" : "max-h-0"
-      )}>
-        <nav className="container-custom flex flex-col space-y-6 py-8">
-          <a 
-            href="#rooms" 
-            className="nav-link text-center text-base"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Rooms
-          </a>
-          <a 
-            href="#experiences" 
-            className="nav-link text-center text-base"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Experiences
-          </a>
-          <a 
-            href="#dining" 
-            className="nav-link text-center text-base"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Dining
-          </a>
-          <a 
-            href="#about" 
-            className="nav-link text-center text-base"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            About
-          </a>
+      <div
+        className={cn(
+          "absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md transition-all duration-500 ease-in-out overflow-hidden lg:hidden",
+          isMobileMenuOpen
+            ? "max-h-[400px] py-6 border-b border-gray-200"
+            : "max-h-0 py-0"
+        )}
+      >
+        <nav className="flex flex-col items-center space-y-5">
+          {[
+            { label: "Rooms", href: "#rooms" },
+            { label: "Experiences", href: "#experiences" },
+            { label: "Dining", href: "#dining" },
+            { label: "About", href: "#about" },
+          ].map(({ label, href }) => (
+            <a
+              key={label}
+              href={href}
+              className="text-base font-medium text-gray-800 hover:text-gray-600 transition"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
