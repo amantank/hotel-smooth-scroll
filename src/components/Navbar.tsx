@@ -88,7 +88,7 @@ const Navbar = () => {
           <a href="#events" className="nav-link">
             Events
           </a>
-          <a href="#about" className="nav-link">
+          <a href="/about" className="nav-link">
             About
           </a>
         </nav>

@@ -67,11 +67,14 @@ const HeroSection = () => {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
-        src="/sample.mp4"
+        src="/sample8.mp4"
         autoPlay
         loop
         muted
+        playsInline
+        preload="auto"
       />
+
       <div className="absolute inset-0 bg-ultima-950/40 z-10"></div>
 
       {/* Content */}

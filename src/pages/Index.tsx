@@ -4,6 +4,9 @@ import HeroSection from "@/components/HeroSection";
 import FeaturedRooms from "@/components/FeaturedRooms";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
+import Dining from "../../public/reservation-title.jpg";
+import ConferenceHall from "../../public/conference-hall.jpeg";
+import ReelsCarousel from "@/components/carousal";
 
 const Index = () => {
   useEffect(() => {
@@ -61,7 +64,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop"
+                      src={Dining}
                       alt="Hotel Ridhhin Udaipur Restaurant"
                       className="w-full h-full object-cover"
                     />
@@ -189,7 +192,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?q=80&w=1600&auto=format&fit=crop"
+                      src={ConferenceHall}
                       alt="Conference at Hotel Riddhi Inn"
                       className="w-full h-full object-cover"
                     />
@@ -233,6 +236,9 @@ const Index = () => {
         </section>
 
         <AboutSection />
+        <div>
+          <ReelsCarousel />
+        </div>
       </main>
 
       <Footer />

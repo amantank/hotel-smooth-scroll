@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import Moon from "../../public/moon.jpg"
 
 const AboutSection = () => {
   const [expanded, setExpanded] = useState(false);
@@ -91,9 +92,9 @@ const AboutSection = () => {
             <div className="relative">
               <div className="appear fade-in-right aspect-w-4 aspect-h-5 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop"
+                  src={Moon}
                   alt="Hotel Riddhi Inn Interior"
-                  className="w-full h-full object-cover"
+                  className="w-full max-h-[45rem] object-cover"
                 />
               </div>
               <div className="appear fade-in-right reveal-delay-200 absolute -bottom-8 -left-8 w-64 p-6 bg-white shadow-lg">

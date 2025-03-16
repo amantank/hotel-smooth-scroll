@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+.appear {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-left {
+  transform: translateX(-30px);
+}
+
+.fade-in-right {
+  transform: translateX(30px);
+}
+
+.observed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
