@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/AboutSectionNav";
 import Footer from "@/components/Footer";
-import BhawarLalJi from "../../public/BhanwarLalji.jpg"
-import SureshJi from "../../public/suresh-sharmaji.jpg"
-import Lalitji from "../../public/lalit-sharmaji.jpg"
-
+import BhawarLalJi from "../../public/BhanwarLalji.jpg";
+import SureshJi from "../../public/suresh-sharmaji.jpg";
+import Lalitji from "../../public/lalit-sharmaji.jpg";
+import ReelsCarousel from "@/components/carousal";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -86,7 +86,11 @@ const AboutPage = () => {
               </h3>
               <ul className="mb-6">
                 {[
-                  { name: "Bhanwar Lal Sharma", role: "Chairman", img: BhawarLalJi},
+                  {
+                    name: "Bhanwar Lal Sharma",
+                    role: "Chairman",
+                    img: BhawarLalJi,
+                  },
                   { name: "Suresh Sharma", role: "Founder", img: SureshJi },
                   { name: "Lalit Sharma", role: "Founder", img: Lalitji },
                 ].map((leader, index) => (
@@ -96,9 +100,15 @@ const AboutPage = () => {
                     data-animation="fade-in-left"
                     data-delay={`${index * 150 + 500}`}
                   >
-                    <img src={leader.img} alt={leader.name} className="w-24 h-24 rounded-full shadow-lg" />
+                    <img
+                      src={leader.img}
+                      alt={leader.name}
+                      className="w-24 h-24 rounded-full shadow-lg"
+                    />
                     <div>
-                      <strong className="text-lg text-gray-900">{leader.name}</strong>
+                      <strong className="text-lg text-gray-900">
+                        {leader.name}
+                      </strong>
                       <p className="text-sm text-gray-600">{leader.role}</p>
                     </div>
                   </li>
@@ -124,11 +134,21 @@ const AboutPage = () => {
                   data-animation="fade-in-right"
                   data-delay="800"
                 >
-                  <div className="appear flex items-center justify-between mb-4" data-animation="fade-in-right" data-delay="900">
-                    <span className="text-xl font-playfair text-gray-800">A Legacy of Hospitality</span>
+                  <div
+                    className="appear flex items-center justify-between mb-4"
+                    data-animation="fade-in-right"
+                    data-delay="900"
+                  >
+                    <span className="text-xl font-playfair text-gray-800">
+                      A Legacy of Hospitality
+                    </span>
                   </div>
                   <div className="h-px w-full bg-ultima-200 mb-4"></div>
-                  <p className="appear text-ultima-600 text-sm" data-animation="fade-in-right" data-delay="1000">
+                  <p
+                    className="appear text-ultima-600 text-sm"
+                    data-animation="fade-in-right"
+                    data-delay="1000"
+                  >
                     Experience world-class service with a touch of warmth and
                     tradition. At Hotel Riddhi Inn, we strive to create memories
                     that last a lifetime.
@@ -138,6 +158,9 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+      <div>
+        <ReelsCarousel />
+      </div>
       </main>
       <Footer />
     </>

@@ -1,24 +1,20 @@
 import React, { useState } from "react";
-import Reel from "../../public/reel.mp4";
-
+import Reel from "../assets/reel.mp4";
+import Reel2 from "../assets/reel2.mp4";
+import Reel3 from "../assets two/reel4.mp4";
+import Reel4 from "../assets/reel3.mp4";
 const reels = [
   { id: 1, src: Reel },
-  { id: 2, src: Reel },
-  { id: 3, src: Reel },
-  { id: 4, src: Reel },
-  { id: 5, src: Reel },
-  { id: 6, src: Reel },
-  { id: 7, src: Reel },
-  { id: 8, src: Reel },
-  { id: 9, src: Reel },
-  { id: 9, src: Reel },
+  { id: 2, src: Reel2 },
+  { id: 3, src: Reel3 },
+  { id: 4, src: Reel4 },
 ];
 
 const ReelsExpandable: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="w-full max-w-6xl mx-auto mt-5 px-4">
+    <div className="w-full max-w-6xl mx-auto mt-5 mb-6 px-4">
       <div className="text-center mb-16">
         <span className="appear fade-in inline-block text-ultima-500 uppercase text-sm tracking-widest mb-3">
           Memorable Moments

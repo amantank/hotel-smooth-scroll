@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Dining from "../../public/reservation-title.jpg";
 import ConferenceHall from "../../public/conference-hall.jpeg";
 import ReelsCarousel from "@/components/carousal";
+import Wedding from "../../public/wedding.jpg"
 
 const Index = () => {
   useEffect(() => {
@@ -115,7 +116,7 @@ const Index = () => {
 
                 <div className="appear fade-in reveal-delay-500 mt-8">
                   <a
-                    href="https://wa.me/+919982616160?text=Hello!%20I'm%20interested%20in%20reserving%20a%20table%20at%20your%20restaurant.%20Could%20you%20please%20provide%20more%20details%20on%20availability%20and%20menu%3F"
+                    href="https://wa.me/+919509928792?text=Hello!%20I'm%20interested%20in%20reserving%20a%20table%20at%20your%20restaurant.%20Could%20you%20please%20provide%20more%20details%20on%20availability%20and%20menu%3F"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
@@ -145,9 +146,9 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=1600&auto=format&fit=crop"
+                      src={Wedding}
                       alt="Wedding at Hotel Riddhi Inn"
-                      className="w-full h-full object-cover"
+                      className="w-full max-h-[30rem] object-cover"
                     />
                   </div>
                   <div className="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg">
@@ -176,7 +177,7 @@ const Index = () => {
                 </p>
                 <div className="appear fade-in reveal-delay-500 mt-8">
                   <a
-                    href="https://wa.me/919982616160?text=Hello!%20I'm%20interested%20in%20planning%20a%20wedding%20at%20your%20venue.%20Could%20you%20please%20provide%20more%20details%20on%20availability,%20pricing,%20and%20services%3F"
+                    href="https://wa.me/+919509928792?text=Hello!%20I'm%20interested%20in%20planning%20a%20wedding%20at%20your%20venue.%20Could%20you%20please%20provide%20more%20details%20on%20availability,%20pricing,%20and%20services%3F"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
@@ -222,7 +223,7 @@ const Index = () => {
                 </p>
                 <div className="appear fade-in reveal-delay-500 mt-8">
                   <a
-                    href="https://wa.me/919982616160?text=Hello!%20I'm%20interested%20in%20booking%20a%20conference%20room%20at%20your%20venue.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F"
+                    href="https://wa.me/+919509928792?text=Hello!%20I'm%20interested%20in%20booking%20a%20conference%20room%20at%20your%20venue.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"

@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import EnquireButton from "./EnquireButton";
+import Video from "/p2/sample9.mp4"
 
 const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -67,7 +68,7 @@ const HeroSection = () => {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
-        src="/sample8.mp4"
+        src={Video}
         autoPlay
         loop
         muted

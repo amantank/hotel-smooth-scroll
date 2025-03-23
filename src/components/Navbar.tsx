@@ -113,7 +113,7 @@ const Navbar = () => {
             { label: "Rooms", href: "#rooms" },
             { label: "Dining", href: "#dining" },
             { label: "Events", href: "#events" },
-            { label: "About", href: "#about" },
+            { label: "About", href: "/about" },
           ].map(({ label, href }) => (
             <a
               key={label}
