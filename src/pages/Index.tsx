@@ -8,6 +8,7 @@ import Dining from "../../public/reservation-title.jpg";
 import ConferenceHall from "../../public/conference-hall.jpeg";
 import ReelsCarousel from "@/components/carousal";
 import Wedding from "../../public/wedding.jpg"
+import InstagramFeed from "@/components/instagramFeed";
 
 const Index = () => {
   useEffect(() => {
@@ -52,7 +53,7 @@ const Index = () => {
               <span className="appear fade-in inline-block text-ultima-500 uppercase text-sm tracking-widest mb-3">
                 Culinary Excellence
               </span>
-              <h2 className="appear fade-in reveal-delay-100 text-4xl md:text-5xl mb-6">
+              <h2 className="appear fade-in font-cinzel reveal-delay-100 text-4xl md:text-5xl mb-6">
                 Exceptional Dining
               </h2>
               <p className="appear fade-in reveal-delay-200 text-ultima-600 max-w-2xl mx-auto">
@@ -136,7 +137,7 @@ const Index = () => {
               <span className="appear fade-in inline-block text-ultima-500 uppercase text-sm tracking-widest mb-3">
                 Memorable Gatherings
               </span>
-              <h2 className="appear fade-in reveal-delay-100 text-4xl md:text-5xl mb-6">
+              <h2 className="appear font-cinzel fade-in reveal-delay-100 text-4xl md:text-5xl mb-6">
                 Weddings & Conferences
               </h2>
             </div>
@@ -239,6 +240,7 @@ const Index = () => {
         <AboutSection />
         <div>
           <ReelsCarousel />
+          {/* <InstagramFeed /> */}
         </div>
       </main>
 

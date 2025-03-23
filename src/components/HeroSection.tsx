@@ -78,7 +78,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 h-full flex items-center justify-center text-white container-custom">
         <div className="text-center max-w-4xl mx-auto pt-20">
-          <h1 className="appear fade-in text-5xl md:text-7xl lg:text-8xl font-light mb-6">Riddhi Inn</h1>
+          <h1 className="appear fade-in text-5xl md:text-7xl lg:text-8xl font-cinzel font-light mb-6">Riddhi Inn</h1>
           <p className="appear fade-in reveal-delay-200 text-lg md:text-xl tracking-wide max-w-2xl mx-auto mb-8 font-light">
             A regal retreat where timeless elegance and unmatched comfort come together, offering a sanctuary where royalty truly rests
           </p>

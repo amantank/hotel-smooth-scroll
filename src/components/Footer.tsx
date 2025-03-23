@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="appear fade-in">
             <div className="mb-6">
               <div className="text-center md:text-left">
-                <h1 className="text-2xl font-playfair tracking-wider mb-1">
+                <h1 className="text-2xl font-cinzel tracking-wider mb-1">
                   Hotel Riddhi Inn
                 </h1>
                 <div className="text-[10px] tracking-[0.3em] uppercase">

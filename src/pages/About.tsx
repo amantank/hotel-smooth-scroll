@@ -57,7 +57,7 @@ const AboutPage = () => {
                 Welcome to Hotel Riddhi Inn
               </span>
               <h2
-                className="appear text-4xl md:text-5xl mb-6 font-bold text-gray-900"
+                className="appear text-4xl md:text-5xl mb-6 font-bold font-cinzel text-gray-900"
                 data-animation="fade-in-left"
                 data-delay="200"
               >
@@ -87,12 +87,12 @@ const AboutPage = () => {
               <ul className="mb-6">
                 {[
                   {
-                    name: "Bhanwar Lal Sharma",
+                    name: "Late Shri Bhanwar Lal Sharma",
                     role: "Chairman",
                     img: BhawarLalJi,
                   },
-                  { name: "Suresh Sharma", role: "Founder", img: SureshJi },
-                  { name: "Lalit Sharma", role: "Founder", img: Lalitji },
+                  { name: "Mr. Suresh Sharma", role: "Founder", img: SureshJi },
+                  { name: "Mr. Lalit Sharma", role: "Founder", img: Lalitji },
                 ].map((leader, index) => (
                   <li
                     key={leader.name}

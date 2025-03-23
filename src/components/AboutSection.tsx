@@ -41,7 +41,7 @@ const AboutSection = () => {
             <span className="appear fade-in-left inline-block text-ultima-500 uppercase text-sm tracking-widest mb-3">
               About Hotel Riddhi Inn
             </span>
-            <h2 className="appear fade-in-left reveal-delay-100 text-4xl md:text-5xl mb-6">
+            <h2 className="appear fade-in-left font-cinzel reveal-delay-100 text-4xl md:text-5xl mb-6">
               Prestige Through Generations
             </h2>
             <p className="appear fade-in-left reveal-delay-200 text-ultima-600 mb-6">

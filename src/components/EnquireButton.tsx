@@ -15,8 +15,11 @@ const EnquireButton = ({
     <a
       href="#enquire"
       className={cn(
-        "btn btn-ghost uppercase text-sm tracking-wider transition-all duration-300",
-        isScrolled ? "text-black" : "text-white hover:bg-ultima-800 hover:text-white  transition-2s"
+        "relative px-6 py-2 rounded-full text-sm font-medium uppercase tracking-wider transition-all duration-300",
+        "before:absolute before:inset-0 before:rounded-full before:scale-95 before:opacity-0 before:bg-black/10 before:transition-all before:duration-300 hover:before:scale-100 hover:before:opacity-100",
+        isScrolled
+          ? "text-black hover:text-white hover:bg-black"
+          : "text-white border border-white hover:bg-white hover:text-black"
       )}
     >
       Enquire

@@ -19,7 +19,7 @@ const ReelsExpandable: React.FC = () => {
         <span className="appear fade-in inline-block text-ultima-500 uppercase text-sm tracking-widest mb-3">
           Memorable Moments
         </span>
-        <h2 className="appear fade-in reveal-delay-100 text-4xl md:text-5xl mb-6">
+        <h2 className="appear fade-in font-cinzel reveal-delay-100 text-4xl md:text-5xl mb-6">
           Shorts
         </h2>
       </div>

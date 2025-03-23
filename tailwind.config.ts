@@ -19,6 +19,7 @@ export default {
 			}
 		},
 		extend: {
+			
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -85,6 +86,7 @@ export default {
 			fontFamily: {
 				playfair: ['Playfair Display', 'serif'],
 				sans: ['Inter', 'sans-serif'],
+				cinzel: ["'Cinzel Decorative'", "serif"],
 			},
 			keyframes: {
 				'accordion-down': {
