@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import EnquireButton from "./EnquireButton";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -14,7 +15,9 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  const handleRoomClick = () => {
+    navigate(`/about`);
+  };
   return (
     <header
       className={cn(
@@ -79,7 +82,7 @@ const Navbar = () => {
             "hidden lg:flex items-center space-x-6 ",
             isScrolled ? "text-black" : " text-white"
           )}
-          
+
         >
           <a href="#rooms" className="nav-link">
             Rooms
@@ -90,7 +93,7 @@ const Navbar = () => {
           <a href="#events" className="nav-link">
             Events
           </a>
-          <a href="/about" className="nav-link">
+          <a onClick={handleRoomClick} className="nav-link">
             About
           </a>
         </nav>
@@ -98,7 +101,7 @@ const Navbar = () => {
         {/* Enquire Button */}
         <div className="hidden  lg:block">
           <EnquireButton isScrolled={isScrolled} />
-        </div> 
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -115,17 +118,25 @@ const Navbar = () => {
             { label: "Rooms", href: "#rooms" },
             { label: "Dining", href: "#dining" },
             { label: "Events", href: "#events" },
-            { label: "About", href: "/about" },
+            { label: "About", href: "" }, // This should trigger handleRoomClick
           ].map(({ label, href }) => (
             <a
               key={label}
-              href={href}
+              href={href || undefined} // Prevents empty href issue
               className="text-base font-medium text-gray-800 hover:text-gray-600 transition"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => {
+                setIsMobileMenuOpen(false);
+
+                if (!href) {
+                  e.preventDefault(); // Prevent default navigation for empty href
+                  handleRoomClick(); // Call the function properly
+                }
+              }}
             >
               {label}
             </a>
           ))}
+
         </nav>
       </div>
     </header>
