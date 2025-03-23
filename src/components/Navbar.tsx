@@ -63,6 +63,7 @@ const Navbar = () => {
           <a href="#" className="text-center">
             <div className="flex flex-col items-center">
               <h1 className="text-xl md:text-2xl font-cinzel tracking-wider">
+
                 Riddhi Inn
               </h1>
               <div className="text-[10px] tracking-[0.3em] uppercase">
@@ -78,6 +79,7 @@ const Navbar = () => {
             "hidden lg:flex items-center space-x-6 ",
             isScrolled ? "text-black" : " text-white"
           )}
+          
         >
           <a href="#rooms" className="nav-link">
             Rooms

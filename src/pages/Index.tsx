@@ -240,7 +240,7 @@ const Index = () => {
         <AboutSection />
         <div>
           <ReelsCarousel />
-          {/* <InstagramFeed /> */}
+          {/* <InstagramFeed />  */}
         </div>
       </main>
 
