@@ -126,6 +126,7 @@ const FeaturedRooms = () => {
                 >
                   {room.description}
                 </p>
+               
                 <button
                   onClick={() =>
                     setExpandedRoom(expandedRoom === room.id ? null : room.id)
@@ -134,6 +135,16 @@ const FeaturedRooms = () => {
                 >
                   {expandedRoom === room.id ? "Show Less" : "Discover More"}
                 </button>
+                {
+                  expandedRoom == room.id && (
+                    <button
+                      onClick={() => handleRoomClick(room)}
+                      className="block mt-4 btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
+                    >
+                      see details
+                    </button>
+                  )
+                }
                 <button
                   onClick={() => handleInquiry(room)}
                   className="block mt-4 btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
