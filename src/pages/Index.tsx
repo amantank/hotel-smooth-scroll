@@ -9,6 +9,7 @@ import ConferenceHall from "../../public/conference-hall.jpeg";
 import ReelsCarousel from "@/components/carousal";
 import Wedding from "../../public/wedding.jpg"
 import InstagramFeed from "@/components/instagramFeed";
+import ImageGallery from "@/components/imageGallery";
 
 const Index = () => {
   useEffect(() => {
@@ -241,6 +242,7 @@ const Index = () => {
         <div>
           <ReelsCarousel />
           {/* <InstagramFeed />  */}
+          <ImageGallery />
         </div>
       </main>
 

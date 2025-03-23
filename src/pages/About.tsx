@@ -6,6 +6,7 @@ import BhawarLalJi from "../../public/BhanwarLalji.jpg";
 import SureshJi from "../../public/suresh-sharmaji.jpg";
 import Lalitji from "../../public/lalit-sharmaji.jpg";
 import ReelsCarousel from "@/components/carousal";
+import ImageGallery from "@/components/imageGallery";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -45,8 +46,8 @@ const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <main className="section bg-ultima-50">
-        <div className="container-custom">
+      <main className="section bg-ultima-50 ">
+        <div className="container-custom max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <span
@@ -160,6 +161,7 @@ const AboutPage = () => {
         </div>
       <div>
         <ReelsCarousel />
+        <ImageGallery />
       </div>
       </main>
       <Footer />

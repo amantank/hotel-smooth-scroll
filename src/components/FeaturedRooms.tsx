@@ -4,10 +4,17 @@ import SuperDeluxeRoom from "../../public/super-deluxe-room.jpg";
 import FamilyRoom from "../../public/family-room.jpg";
 import DeluxeRoom from "../../public/deluxe.jpg";
 import TwinBedRoom from "../../public/twin-bed.jpg";
+import { useNavigate } from "react-router-dom";
+
 
 const FeaturedRooms = () => {
   const [showAllRooms, setShowAllRooms] = useState(false);
   const [expandedRoom, setExpandedRoom] = useState(null);
+  const navigate = useNavigate();
+
+  const handleRoomClick = (room) => {
+    navigate(`/rooms/${room.id}`, { state: { room } });
+  };
 
   useEffect(() => {
     const observerOptions = { root: null, rootMargin: "0px", threshold: 0.1 };
@@ -98,7 +105,7 @@ const FeaturedRooms = () => {
               key={room.id}
               className={`appear fade-in reveal-delay-${room.animationDelay} group`}
             >
-              <div className="relative overflow-hidden  ">
+              <div onClick={() => handleRoomClick(room)} className="relative overflow-hidden  ">
                 <img
                   src={room.imageUrl}
                   alt={room.name}
