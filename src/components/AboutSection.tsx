@@ -6,7 +6,6 @@ const AboutSection = () => {
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    // Intersection Observer for animations
     const observerOptions = {
       root: null,
       rootMargin: "0px",

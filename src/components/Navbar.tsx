@@ -28,7 +28,7 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex items-center justify-between px-4 md:px-6 lg:px-8">
-        {/* Menu Button (Mobile) */}
+        
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="lg:hidden text-foreground mt-2 focus:outline-none"
@@ -56,7 +56,7 @@ const Navbar = () => {
           </div>
         </button>
 
-        {/* Logo */}
+    
         <div
           className={cn(
             "absolute left-1/2 transform -translate-x-1/2 mt-2 transition-all duration-500 ease-in-out",
@@ -76,7 +76,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Desktop Nav */}
+     
         <nav
           className={cn(
             "hidden lg:flex items-center space-x-6 ",
@@ -98,13 +98,13 @@ const Navbar = () => {
           </a>
         </nav>
 
-        {/* Enquire Button */}
+    
         <div className="hidden  lg:block">
           <EnquireButton isScrolled={isScrolled} />
         </div>
       </div>
 
-      {/* Mobile Menu */}
+    
       <div
         className={cn(
           "absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md transition-all duration-500 ease-in-out overflow-hidden lg:hidden",
@@ -118,18 +118,18 @@ const Navbar = () => {
             { label: "Rooms", href: "#rooms" },
             { label: "Dining", href: "#dining" },
             { label: "Events", href: "#events" },
-            { label: "About", href: "" }, // This should trigger handleRoomClick
+            { label: "About", href: "" }, 
           ].map(({ label, href }) => (
             <a
               key={label}
-              href={href || undefined} // Prevents empty href issue
+              href={href || undefined} 
               className="text-base font-medium text-gray-800 hover:text-gray-600 transition"
               onClick={(e) => {
                 setIsMobileMenuOpen(false);
 
                 if (!href) {
-                  e.preventDefault(); // Prevent default navigation for empty href
-                  handleRoomClick(); // Call the function properly
+                  e.preventDefault(); 
+                  handleRoomClick(); 
                 }
               }}
             >

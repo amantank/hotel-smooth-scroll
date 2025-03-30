@@ -8,7 +8,6 @@ import Dining from "../../public/reservation-title.jpg";
 import ConferenceHall from "../../public/conference-hall.jpeg";
 import ReelsCarousel from "@/components/carousal";
 import Wedding from "../../public/wedding.jpg"
-import InstagramFeed from "@/components/instagramFeed";
 import ImageGallery from "@/components/imageGallery";
 
 const Index = () => {
@@ -47,7 +46,7 @@ const Index = () => {
         <div className="setion container-custom bg-white">
           <FeaturedRooms />
         </div>
-        {/* Dining Section */}
+        
         <section id="dining" className="section bg-white overflow-hidden">
           <div className="container-custom">
             <div className="text-center mb-16">
@@ -131,7 +130,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Events Section */}
+    
         <section id="events" className="section bg-white overflow-hidden">
           <div className="container-custom">
             <div className="text-center mb-16">
@@ -241,7 +240,6 @@ const Index = () => {
         <AboutSection />
         <div>
           <ReelsCarousel />
-          {/* <InstagramFeed />  */}
           <ImageGallery />
         </div>
       </main>

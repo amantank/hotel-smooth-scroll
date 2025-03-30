@@ -4,7 +4,7 @@ import images from "@/assets/Gallery/images";
 const ImageGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showAll, setShowAll] = useState(false);
-  const visibleImages = showAll ? images : images.slice(0, 8); // Show 8 images initially
+  const visibleImages = showAll ? images : images.slice(0, 8); 
 
   return (
     <div className="w-full max-w-6xl mx-auto mt-5 mb-6 px-4 text-center">

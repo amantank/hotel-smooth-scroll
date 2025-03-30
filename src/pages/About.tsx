@@ -13,7 +13,7 @@ const AboutPage = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.2, // Trigger animations earlier
+      threshold: 0.2, 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -25,7 +25,6 @@ const AboutPage = () => {
           if (animation && !target.classList.contains("observed")) {
             target.classList.add(animation, "observed");
 
-            // Staggered animation for smoother effect
             setTimeout(() => {
               target.style.opacity = "1";
               target.style.transform = "translateY(0) translateX(0)";

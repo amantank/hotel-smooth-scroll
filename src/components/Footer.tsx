@@ -2,7 +2,6 @@ import { useEffect } from "react";
 
 const Footer = () => {
   useEffect(() => {
-    // Intersection Observer for animations
     const observerOptions = {
       root: null,
       rootMargin: "0px",

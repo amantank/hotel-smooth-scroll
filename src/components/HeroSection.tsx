@@ -45,14 +45,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
+
       <div className="absolute lg:hidden inset-0 w-full h-full">
         <iframe
           src="https://player.vimeo.com/video/1068531739?h=7d688f03ae&autoplay=1&loop=1&background=1"
           className="absolute inset-0 w-full h-full"
           style={{
             objectFit: "cover",
-            pointerEvents: "none", // Prevents clicks on the video
+            pointerEvents: "none", 
             zIndex: "-1",
           }}
           frameBorder="0"
@@ -75,7 +75,6 @@ const HeroSection = () => {
 
       <div className="absolute inset-0 bg-ultima-950/40 z-10"></div>
 
-      {/* Content */}
       <div className="relative z-20 h-full flex items-center justify-center text-white container-custom">
         <div className="text-center max-w-4xl mx-auto pt-20">
           <h1 className="appear fade-in text-5xl md:text-7xl lg:text-8xl font-cinzel font-light mb-6">Riddhi Inn</h1>
@@ -88,7 +87,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Video Controls */}
       <div className="absolute bottom-12 right-12 z-20 flex space-x-4">
         {[
           { onClick: togglePlay, label: isPlaying ? "Pause" : "Play", icon: isPlaying ? "pause" : "play" },

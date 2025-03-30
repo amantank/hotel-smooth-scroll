@@ -5,10 +5,10 @@ import ReelsCarousel from "@/components/carousal";
 import { cn } from "@/lib/utils";
 import Navbar from "./AboutSectionNav";
 
-import rooms from "@/assets/Rooms/rooms";  // Ensure this is correctly imported
+import rooms from "@/assets/Rooms/rooms";  
 import ImageGallery from "./imageGallery";
 
-// Helper function to get images for a specific room category
+
 const getRoomImages = (roomName: string) => {
   const roomCategory = rooms.find((room) =>
     room.category.toLowerCase().includes(roomName.toLowerCase())
@@ -64,7 +64,6 @@ const RoomDetails = () => {
   const maxLength = 200;
   const [isExpanded, setIsExpanded] = useState(false);
 
-  console.log("Rooms Data:", rooms);  // Debugging output
 
   const toggleExpanded = () => setIsExpanded(!isExpanded);
 

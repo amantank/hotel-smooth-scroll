@@ -23,7 +23,7 @@ const ReelsExpandable: React.FC = () => {
           Shorts
         </h2>
       </div>
-      {/* Reels Grid (4 Always Visible) */}
+    
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {reels.slice(0, expanded ? reels.length : 4).map((reel) => (
           <div
@@ -42,7 +42,7 @@ const ReelsExpandable: React.FC = () => {
         ))}
       </div>
 
-      {/* Expand Button */}
+    
       {reels.length > 4 && (
         <div className="text-center mt-4">
           <button

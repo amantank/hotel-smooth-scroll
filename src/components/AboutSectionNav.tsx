@@ -18,28 +18,28 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to the target section after navigating
+
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth" });
-        }, 100); // Delay to ensure navigation happens first
+        }, 100); 
       }
     }
   }, [location]);
 
   const handleNavClick = (sectionId: string) => {
     if (location.pathname !== "/") {
-      navigate("/", { replace: false }); // Navigate to home first
+      navigate("/", { replace: false }); 
       setTimeout(() => {
-        window.location.hash = sectionId; // Then update the hash
+        window.location.hash = sectionId; 
       }, 100);
     } else {
-      window.location.hash = sectionId; // If already on home, just update hash
+      window.location.hash = sectionId; 
     }
-    setIsMobileMenuOpen(false); // Close mobile menu after click
+    setIsMobileMenuOpen(false); 
   };
 
   return (
@@ -49,7 +49,7 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex items-center justify-between px-4 md:px-6 lg:px-8">
-        {/* Menu Button (Mobile) */}
+       
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="lg:hidden text-black mt-2 focus:outline-none"
@@ -77,7 +77,7 @@ const Navbar = () => {
           </div>
         </button>
 
-        {/* Logo */}
+
         <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 transition-all duration-500 ease-in-out text-black">
           <a href="#" className="text-center">
             <div className="flex flex-col items-center">
@@ -91,7 +91,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Desktop Nav */}
+     
         <nav className="hidden lg:flex items-center space-x-6 text-black">
           <button onClick={() => handleNavClick("#rooms")} className="nav-link">
             Rooms
@@ -107,13 +107,13 @@ const Navbar = () => {
           </a>
         </nav>
 
-        {/* Enquire Button */}
+    
         <div className="hidden lg:block">
           <EnquireButton isScrolled={isScrolled} />
         </div>
       </div>
 
-      {/* Mobile Menu */}
+   
       <div
         className={cn(
           "absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md transition-all duration-500 ease-in-out overflow-hidden lg:hidden",
