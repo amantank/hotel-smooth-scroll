@@ -28,14 +28,14 @@ const ImageGallery = () => {
               <img
                 src={img.src}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-auto object-cover rounded-xl  hover:scale-105 transition duration-300 ease-in-out"
+                className="w-full h-auto object-cover rounded-md  hover:scale-105 transition duration-300 ease-in-out"
               />
             </div>
           ))}
         </div>
 
         {!showAll && (
-          <div className="absolute bottom-0 left-0 w-full h-32  bg-gradient-to-t from-white via-white/80 to-transparent flex items-end justify-center">
+          <div className="absolute bottom-0 left-0 w-full h-32  bg-gradient-to-t from-ultima-50 via-ultima/80 to-transparent flex items-end justify-center">
             <button
               onClick={() => setShowAll(true)}
               className="appear fade-in-left  reveal-delay-500 inline-block text-ultima-800 uppercase text-sm tracking-wider after:content-[''] after:block after:w-full after:h-px after:bg-ultima-300 after:transition-transform after:duration-300 hover:after:scale-x-50"

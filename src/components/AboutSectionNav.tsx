@@ -84,7 +84,7 @@ const Navbar = () => {
               <h1 className="text-xl md:text-2xl font-cinzel tracking-wider">
                 Riddhi Inn
               </h1>
-              <div className="text-[10px] tracking-[0.3em] uppercase">
+              <div className="text-[10px] tracking-[0.3em] uppercase mb-2">
                 Udaipur
               </div>
             </div>

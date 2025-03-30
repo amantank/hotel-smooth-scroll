@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ",
         isScrolled
           ? "bg-white/90 backdrop-blur-md py-3 shadow-sm"
           : "bg-transparent py-5"
@@ -63,13 +63,13 @@ const Navbar = () => {
             isScrolled ? "scale-90 text-black" : "scale-100 text-white"
           )}
         >
-          <a href="#" className="text-center">
+          <a href="/" className="text-center">
             <div className="flex flex-col items-center">
               <h1 className="text-xl md:text-2xl font-cinzel tracking-wider">
 
                 Riddhi Inn
               </h1>
-              <div className="text-[10px] tracking-[0.3em] uppercase">
+              <div className="text-[10px] tracking-[0.3em] uppercase mb-2">
                 Udaipur
               </div>
             </div>
