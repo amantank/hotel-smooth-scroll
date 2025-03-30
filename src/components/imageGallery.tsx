@@ -4,10 +4,12 @@ import images from "@/assets/Gallery/images";
 const ImageGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showAll, setShowAll] = useState(false);
-  const visibleImages = showAll ? images : images.slice(0, 8); 
+  const visibleImages = showAll ? images : images.slice(0, 8);
 
   return (
-    <div className="w-full max-w-6xl mx-auto mt-5 mb-6 px-4 text-center">
+    <div
+      className="w-full max-w-6xl bg-transparent mx-auto mt-5 mb-6 px-4 text-center"
+    >
       <span className="appear mt-24 fade-in-left inline-block text-ultima-500 uppercase text-sm tracking-widest mb-3">
         Gallery
       </span>
@@ -16,7 +18,7 @@ const ImageGallery = () => {
       </h2>
 
       <div className="relative mt-24">
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-2 space-y-1">
+        <div className="columns-2 bg-transparent md:columns-3 lg:columns-4 gap-2 space-y-1">
           {visibleImages.map((img, index) => (
             <div
               key={index}
@@ -33,10 +35,10 @@ const ImageGallery = () => {
         </div>
 
         {!showAll && (
-          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white via-white/80 to-transparent flex items-end justify-center">
+          <div className="absolute bottom-0 left-0 w-full h-32  bg-gradient-to-t from-white via-white/80 to-transparent flex items-end justify-center">
             <button
               onClick={() => setShowAll(true)}
-              className="appear fade-in-left reveal-delay-500 inline-block text-ultima-800 uppercase text-sm tracking-wider after:content-[''] after:block after:w-full after:h-px after:bg-ultima-300 after:transition-transform after:duration-300 hover:after:scale-x-50"
+              className="appear fade-in-left  reveal-delay-500 inline-block text-ultima-800 uppercase text-sm tracking-wider after:content-[''] after:block after:w-full after:h-px after:bg-ultima-300 after:transition-transform after:duration-300 hover:after:scale-x-50"
             >
               See More
             </button>
@@ -45,10 +47,10 @@ const ImageGallery = () => {
       </div>
 
       {showAll && (
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mt-6 ">
           <button
             onClick={() => setShowAll(false)}
-            className="appear fade-in-left reveal-delay-500 inline-block text-ultima-800 uppercase text-sm tracking-wider after:content-[''] after:block after:w-full after:h-px after:bg-ultima-300 after:transition-transform after:duration-300 hover:after:scale-x-50"
+            className="appear fade-in-left  reveal-delay-500 inline-block text-ultima-800 uppercase text-sm tracking-wider after:content-[''] after:block after:w-full after:h-px after:bg-ultima-300 after:transition-transform after:duration-300 hover:after:scale-x-50"
           >
             See Less
           </button>
@@ -57,7 +59,7 @@ const ImageGallery = () => {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 transition-opacity duration-300"
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50  transition-opacity duration-300"
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative max-w-3xl w-full p-4">

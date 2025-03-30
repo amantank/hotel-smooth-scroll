@@ -124,7 +124,7 @@ const AboutPage = () => {
                   data-delay="600"
                 >
                   <img
-                    src={"../../public/raw.JPG"}
+                    src={"https://i.pinimg.com/736x/f5/ca/2e/f5ca2e80d990e4ea4657cdcbe977d0f2.jpg"}
                     alt="Hotel Riddhi Inn Interior"
                     className="w-full h-full object-cover"
                   />

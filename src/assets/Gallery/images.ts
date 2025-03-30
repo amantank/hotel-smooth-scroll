@@ -16,6 +16,7 @@ const images = [
   { name: "restroOne", src: "https://i.pinimg.com/736x/78/3f/78/783f783b064a4b38687b3e8e942ce2ed.jpg"},
   { name: "restroTwo", src: "https://i.pinimg.com/736x/05/5c/4a/055c4a94b63fbabccb4f6a1ce5c49199.jpg" },
   { name: "restroTwo", src: "https://i.pinimg.com/736x/2e/1d/57/2e1d574bea1687509b45a5b5e86615b7.jpg" },
+  { name: "restroTwo", src: "https://i.pinimg.com/736x/00/69/fd/0069fde6c2cf3a91c1632b9ef4b68029.jpg" },
 ];
 
 export default images;
