@@ -28,7 +28,7 @@ const ImageGallery = () => {
               <img
                 src={img.src}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-auto object-cover rounded-md  hover:scale-105 transition duration-300 ease-in-out"
+                className="w-full h-auto object-cover rounded-xl  hover:scale-105 transition duration-300 ease-in-out"
               />
             </div>
           ))}
