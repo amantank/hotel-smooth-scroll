@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import BhawarLalJi from "../../public/BhanwarLalji.jpg";
 import SureshJi from "../../public/suresh-sharmaji.jpg";
 import Lalitji from "../../public/lalit-sharmaji.jpg";
-import ReelsCarousel from "@/components/carousal";
+import ReelsCarousel from "@/components/reels";
 import ImageGallery from "@/components/imageGallery";
 
 const AboutPage = () => {

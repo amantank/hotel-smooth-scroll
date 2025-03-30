@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Footer from "./Footer";
-import ReelsCarousel from "@/components/carousal";
+import ReelsCarousel from "@/components/reels";
 import { cn } from "@/lib/utils";
 import Navbar from "./AboutSectionNav";
 

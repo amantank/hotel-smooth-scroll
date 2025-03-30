@@ -1,10 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import SuperDeluxeRoom from "../../public/super-deluxe-room.jpg";
-import FamilyRoom from "../../public/family-room.jpg";
-import DeluxeRoom from "../../public/deluxe.jpg";
-import TwinBedRoom from "../../public/twin-bed.jpg";
 import { useNavigate } from "react-router-dom";
+
+
 
 
 const FeaturedRooms = () => {
@@ -43,7 +41,7 @@ const FeaturedRooms = () => {
       description:
         "A spacious room with the comfort of a King-size bed for you to relax. It truly redefines luxury. The interiors and furnishings will surely make your stay comfortable and elegant, offering a perfect blend of style and convenience.",
       price: "",
-      imageUrl: SuperDeluxeRoom,
+      imageUrl: "https://i.pinimg.com/736x/b8/56/6b/b8566b20a333360c55bbea7a4bc2855c.jpg",
       animationDelay: "100",
     },
     {
@@ -52,7 +50,7 @@ const FeaturedRooms = () => {
       description:
         "A spacious family room featuring two King-size beds for ultimate relaxation. It truly redefines luxury. The interiors and furnishings create a warm and cozy atmosphere, making it the perfect choice for families to unwind and enjoy their stay.",
       price: "",
-      imageUrl: FamilyRoom,
+      imageUrl: 'https://i.pinimg.com/736x/96/1a/96/961a96db28f6724e1513d3a7af8bfbfa.jpg',
       animationDelay: "200",
     },
     {
@@ -62,7 +60,7 @@ const FeaturedRooms = () => {
         "A modern and stylish room equipped with two comfortable twin beds, perfect for friends or colleagues traveling together. The room is designed to provide a relaxing ambiance with premium furnishings and elegant decor.",
       price: "",
       imageUrl:
-      TwinBedRoom,
+      "https://i.pinimg.com/736x/6e/82/8b/6e828beb2c5d984d433338500a6e71ca.jpg",
       animationDelay: "300",
     },
     {
@@ -72,7 +70,7 @@ const FeaturedRooms = () => {
         "A well-appointed room with stylish decor, featuring a plush Queen-size bed and modern amenities. The room offers a serene atmosphere, making it perfect for both business and leisure travelers looking for comfort and convenience.",
       price: "",
       imageUrl:
-      DeluxeRoom ,
+      "https://i.pinimg.com/736x/2d/ed/16/2ded16e37c677c3ce8d517338f5b5b67.jpg",
       animationDelay: "100",
     },
   ];

@@ -4,10 +4,10 @@ import HeroSection from "@/components/HeroSection";
 import FeaturedRooms from "@/components/FeaturedRooms";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
-import Dining from "../../public/reservation-title.jpg";
-import ConferenceHall from "../../public/conference-hall.jpeg";
-import ReelsCarousel from "@/components/carousal";
-import Wedding from "../../public/wedding.jpg"
+
+
+
+import ReelsCarousel from "@/components/reels";
 import ImageGallery from "@/components/imageGallery";
 
 const Index = () => {
@@ -66,7 +66,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src={Dining}
+                      src={"https://i.pinimg.com/736x/26/4c/88/264c88ee13229696b1e7fe9924d8931e.jpg"}
                       alt="Hotel Ridhhin Udaipur Restaurant"
                       className="w-full h-full object-cover"
                     />
@@ -147,7 +147,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src={Wedding}
+                      src={"https://i.pinimg.com/736x/05/5c/4a/055c4a94b63fbabccb4f6a1ce5c49199.jpg"}
                       alt="Wedding at Hotel Riddhi Inn"
                       className="w-full max-h-[30rem] object-cover"
                     />
@@ -194,7 +194,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src={ConferenceHall}
+                      src={"https://i.pinimg.com/736x/2e/1d/57/2e1d574bea1687509b45a5b5e86615b7.jpg"}
                       alt="Conference at Hotel Riddhi Inn"
                       className="w-full h-full object-cover"
                     />

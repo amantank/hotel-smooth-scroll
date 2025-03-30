@@ -91,7 +91,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="appear fade-in-right aspect-w-4 aspect-h-5 overflow-hidden">
                 <img
-                  src={Moon}
+                  src={"https://i.pinimg.com/736x/f8/08/74/f808745b44d9c4b0afcde356dabd2eff.jpg"}
                   alt="Hotel Riddhi Inn Interior"
                   className="w-full max-h-[45rem] object-cover"
                 />
