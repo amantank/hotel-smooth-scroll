@@ -41,7 +41,7 @@ const FeaturedRooms = () => {
       description:
         "A spacious room with the comfort of a King-size bed for you to relax. It truly redefines luxury. The interiors and furnishings will surely make your stay comfortable and elegant, offering a perfect blend of style and convenience.",
       price: "",
-      imageUrl: "https://i.pinimg.com/736x/b8/56/6b/b8566b20a333360c55bbea7a4bc2855c.jpg",
+      imageUrl: "https://i.pinimg.com/736x/48/ab/ed/48abede9267b413b68181848b723dcc3.jpg",
       animationDelay: "100",
     },
     {
@@ -50,7 +50,7 @@ const FeaturedRooms = () => {
       description:
         "A spacious family room featuring two King-size beds for ultimate relaxation. It truly redefines luxury. The interiors and furnishings create a warm and cozy atmosphere, making it the perfect choice for families to unwind and enjoy their stay.",
       price: "",
-      imageUrl: 'https://i.pinimg.com/736x/96/1a/96/961a96db28f6724e1513d3a7af8bfbfa.jpg',
+      imageUrl: 'https://i.pinimg.com/736x/c1/3f/4c/c13f4cef4e4c10b0c6c94c63c6715965.jpg',
       animationDelay: "200",
     },
     {

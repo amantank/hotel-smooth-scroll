@@ -18,7 +18,7 @@ const ImageGallery = () => {
       </h2>
 
       <div className="relative mt-24">
-        <div className="columns-2 bg-transparent md:columns-3 lg:columns-4 gap-2 space-y-1">
+        <div className="columns-2 bg-transparent md:columns-3 lg:columns-4 gap-2 space-y-2">
           {visibleImages.map((img, index) => (
             <div
               key={index}

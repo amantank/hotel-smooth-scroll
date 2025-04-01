@@ -5,10 +5,9 @@ import FeaturedRooms from "@/components/FeaturedRooms";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 
-
-
 import ReelsCarousel from "@/components/reels";
 import ImageGallery from "@/components/imageGallery";
+import Slideshow from "@/components/SliderComp";
 
 const Index = () => {
   useEffect(() => {
@@ -46,7 +45,7 @@ const Index = () => {
         <div className="setion container-custom bg-white">
           <FeaturedRooms />
         </div>
-        
+
         <section id="dining" className="section bg-white overflow-hidden">
           <div className="container-custom">
             <div className="text-center mb-16">
@@ -66,7 +65,9 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src={"https://i.pinimg.com/736x/26/4c/88/264c88ee13229696b1e7fe9924d8931e.jpg"}
+                      src={
+                        "https://i.pinimg.com/736x/26/4c/88/264c88ee13229696b1e7fe9924d8931e.jpg"
+                      }
                       alt="Hotel Ridhhin Udaipur Restaurant"
                       className="w-full h-full object-cover"
                     />
@@ -130,7 +131,6 @@ const Index = () => {
           </div>
         </section>
 
-    
         <section id="events" className="section bg-white overflow-hidden">
           <div className="container-custom">
             <div className="text-center mb-16">
@@ -138,7 +138,7 @@ const Index = () => {
                 Memorable Gatherings
               </span>
               <h2 className="appear font-cinzel fade-in reveal-delay-100 text-4xl md:text-5xl mb-6">
-                Weddings & Conferences
+                Weddings and Other Amenities
               </h2>
             </div>
 
@@ -147,7 +147,9 @@ const Index = () => {
                 <div className="relative">
                   <div className="aspect-w-4 aspect-h-3 overflow-hidden">
                     <img
-                      src={"https://i.pinimg.com/736x/05/5c/4a/055c4a94b63fbabccb4f6a1ce5c49199.jpg"}
+                      src={
+                        "https://i.pinimg.com/736x/05/5c/4a/055c4a94b63fbabccb4f6a1ce5c49199.jpg"
+                      }
                       alt="Wedding at Hotel Riddhi Inn"
                       className="w-full max-h-[30rem] object-cover"
                     />
@@ -189,51 +191,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 items-center mt-24">
-              <div className="appear zoom-in">
-                <div className="relative">
-                  <div className="aspect-w-4 aspect-h-3 overflow-hidden">
-                    <img
-                      src={"https://i.pinimg.com/736x/2e/1d/57/2e1d574bea1687509b45a5b5e86615b7.jpg"}
-                      alt="Conference at Hotel Riddhi Inn"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg">
-                    <span className="text-ultima-800 font-playfair text-xl">
-                      Conferences
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="appear fade-in reveal-delay-100 text-3xl md:text-4xl font-playfair mb-6">
-                  Professional Conference Facilities
-                </h3>
-                <p className="appear fade-in reveal-delay-200 text-ultima-600 mb-6">
-                  Host business meetings, academic conferences, or trade events
-                  in our well-equipped conference halls. Our venue blends
-                  elegance with modern technology, ensuring a seamless
-                  experience.
-                </p>
-                <p className="appear fade-in reveal-delay-300 text-ultima-600 mb-8">
-                  Featuring projectors, advanced sound systems, and elegant
-                  interiors, our conference rooms offer the perfect setting for
-                  productive discussions and networking opportunities.
-                </p>
-                <div className="appear fade-in reveal-delay-500 mt-8">
-                  <a
-                    href="https://wa.me/+919509928792?text=Hello!%20I'm%20interested%20in%20booking%20a%20conference%20room%20at%20your%20venue.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline border-ultima-300 text-ultima-800 hover:bg-ultima-800 hover:text-white"
-                  >
-                    Book a Conference Room
-                  </a>
-                </div>
-              </div>
-            </div>
+            <Slideshow />
           </div>
         </section>
 
