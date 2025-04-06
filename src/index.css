@@ -163,9 +163,14 @@
   }
 }
 
-/* Scroll animation observer */
+
 @media (prefers-reduced-motion: no-preference) {
   .intersection-observer-sentinel {
     visibility: hidden;
   }
+}
+
+::selection {
+  background-color: #999999; 
+  color: #ffffff;
 }

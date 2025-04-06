@@ -80,7 +80,7 @@ const FeaturedRooms = () => {
   const handleInquiry = (room) => {
     const message = `I'm inquiring about the ${room.name}. Please provide more details.`;
     window.open(
-      `https://wa.me/+919509928792?text=${encodeURIComponent(message)}`,
+      `https://wa.me/917733096666?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };

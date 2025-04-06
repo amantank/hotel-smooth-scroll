@@ -10,7 +10,7 @@ const slides = [
       "Host business meetings, academic conferences, or trade events in our well-equipped conference halls. Our venue blends elegance with modern technology, ensuring a seamless experience.",
     buttonText: "Book a Conference Room",
     buttonLink:
-      "https://wa.me/+919509928792?text=Hello!%20I'm%20interested%20in%20booking%20a%20conference%20room%20at%20your%20venue.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F",
+      "https://wa.me/917733096666?text=Hello!%20I'm%20interested%20in%20booking%20a%20conference%20room%20at%20your%20venue.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F",
     showButton: true,
   },
   {
@@ -21,7 +21,7 @@ const slides = [
       "Enjoy our luxurious outdoor pool with breathtaking views. Perfect for relaxation and recreation, our pool area offers a serene environment to unwind with family and friends.",
     buttonText: "Reserve Poolside Spot",
     buttonLink:
-      "https://wa.me/+919509928792?text=Hello!%20I'm%20interested%20in%20booking%20a%20poolside%20spot.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F",
+      "https://wa.me/917733096666?text=Hello!%20I'm%20interested%20in%20booking%20a%20poolside%20spot.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F",
     showButton: true,
   },
   {
@@ -32,7 +32,7 @@ const slides = [
       "Our lush, well-maintained garden offers a tranquil escape from the hustle and bustle. It's the perfect space for outdoor gatherings, relaxation, or a peaceful stroll.",
     buttonText: "Reserve Garden Area",
     buttonLink:
-      "https://wa.me/+919509928792?text=Hello!%20I'm%20interested%20in%20booking%20the%20garden%20area.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F",
+      "https://wa.me/917733096666?text=Hello!%20I'm%20interested%20in%20booking%20the%20garden%20area.%20Could%20you%20please%20provide%20details%20on%20availability,%20pricing,%20and%20amenities%3F",
     showButton: true,
   },
   {

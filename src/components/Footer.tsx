@@ -76,18 +76,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="tel:+917733096666"
+                  href="tel:+917733026666"
                   className="hover:text-white transition-colors"
                 >
                   +91 7733096666
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+919509928792"
-                  className="hover:text-white transition-colors"
-                >
-                  +91 9509928792
                 </a>
               </li>
             </ul>
@@ -100,17 +92,23 @@ const Footer = () => {
             <ul className="space-y-4 text-white/70 text-center md:text-left">
               <li>
                 <a href="#rooms" className="transition-colors hover:text-white">
-                  Rooms 
+                  Rooms
                 </a>
               </li>
               <li>
-                <a href="#dining" className="transition-colors hover:text-white">
+                <a
+                  href="#dining"
+                  className="transition-colors hover:text-white"
+                >
                   Dining
                 </a>
               </li>
 
               <li>
-                <a href="#events" className="transition-colors hover:text-white">
+                <a
+                  href="#events"
+                  className="transition-colors hover:text-white"
+                >
                   Events
                 </a>
               </li>

@@ -112,7 +112,7 @@ const RoomDetails = () => {
               <button
                 onClick={() =>
                   window.open(
-                    `https://wa.me/+919509928792?text=${encodeURIComponent(
+                    `https://wa.me/917733096666?text=${encodeURIComponent(
                       `I'm inquiring about the ${room.name}.`
                     )}`,
                     "_blank"

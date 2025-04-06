@@ -79,7 +79,7 @@ const Navbar = () => {
 
 
         <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 transition-all duration-500 ease-in-out text-black">
-          <a href="#" className="text-center">
+          <a href="/" className="text-center">
             <div className="flex flex-col items-center">
               <h1 className="text-xl md:text-2xl font-cinzel tracking-wider">
                 Riddhi Inn
